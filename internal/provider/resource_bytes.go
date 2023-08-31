@@ -128,7 +128,7 @@ type bytesModelV0 struct {
 func bytesSchemaV0() schema.Schema {
 	return schema.Schema{
 		Version: 0,
-		Description: "The resource `random_bytes` generates random bytes that are intended to be " +
+		Description: "The resource `randombyte_bytes` generates random bytes that are intended to be " +
 			"used as secret or keys.",
 		Attributes: map[string]schema.Attribute{
 			"keepers": schema.MapAttribute{

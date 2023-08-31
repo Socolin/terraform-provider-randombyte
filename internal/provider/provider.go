@@ -17,7 +17,7 @@ var _ provider.Provider = (*randomProvider)(nil)
 type randomProvider struct{}
 
 func (p *randomProvider) Metadata(_ context.Context, _ provider.MetadataRequest, resp *provider.MetadataResponse) {
-	resp.TypeName = "random"
+	resp.TypeName = "randombyte"
 }
 
 func (p *randomProvider) Schema(context.Context, provider.SchemaRequest, *provider.SchemaResponse) {
